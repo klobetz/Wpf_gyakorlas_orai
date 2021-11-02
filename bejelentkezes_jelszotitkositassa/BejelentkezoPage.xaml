@@ -1,0 +1,35 @@
+﻿<Page x:Class="bejelentkezes_jelszotitkositassa.BejelentkezoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:bejelentkezes_jelszotitkositassa"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BejelentkezoPage"
+      Background="#FF5F5656">
+    
+    <Grid>
+        <WrapPanel Width="200" Height="400" Background="#FF7C7C7C">
+            <Label Content="Jelentkezz be a programba"/>
+            <StackPanel MinWidth="150">
+                <Label Content="Felhasznalonev"/>
+                <TextBox x:Name="tb_felhasznalonev"/>
+                
+                <Label Content="Jelszo"/>
+                <TextBox x:Name="tb_jelszo"/>
+                
+                <Label Content="jelszomegjelen"/>
+                <CheckBox/>
+
+                <Button x:Name="btn_belepes" Content="belépés" 
+                        Margin="5,25,5,25" Click="btn_belepes_Click"/>
+            </StackPanel>
+            
+            <Label x:Name="lb_regisztracio" Content="Regisztráció" 
+                   Cursor="Hand"
+                   MouseDoubleClick="lb_regisztracio_MouseDoubleClick"/>
+
+        </WrapPanel>
+    </Grid>
+</Page>
